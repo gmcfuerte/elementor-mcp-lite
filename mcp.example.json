@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "elementor-mcp-lite": {
+      "command": "<absolute-path-to-venv-python>",
+      "args": [
+        "-m",
+        "elementor_mcp_lite"
+      ],
+      "env": {
+        "ELEMENTOR_MCP_LITE_SITES": "<absolute-path-to-local-sites.json>"
+      }
+    }
+  }
+}
