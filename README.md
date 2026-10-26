@@ -1,6 +1,6 @@
 # Elementor MCP Lite
 
-Free limited companion to the GMC Pro product. This is a separate **0.1.2**
+Free limited companion to the GMC Pro product. This is a separate **0.1.3**
 client with a fresh history and only four read-only MCP tools. The Pro
 implementation is absent from this repository.
 
@@ -105,9 +105,18 @@ HTTP 403/415 stops subsequent requests to that base URL until restart.
 
 ## Release status
 
-Initial Lite release: source and package contents inspected and Python
-compiled. Site integration and runtime tests have not been performed.
-Do not treat this initial release as a production integration certification.
+Version **0.1.3**, qualified on 26 October 2026 against disposable WordPress
+**7.1.3**, Elementor Core **4.3.5** and GMC companion **0.5.4**. A real MCP SDK
+stdio session discovered all four read-only tools and exercised site listing,
+authenticated ping, bounded document listing and local layout summarization.
+The Upgrade to Pro resource rendered with real Markdown line breaks, and a
+request for a Pro mutation tool was rejected. A regression first reproduced
+the former literal `\\n` output and passed after the fix.
+
+This edition only reads the companion's classic document listing; it does not
+use Elementor's separate native MCP/Atomic abilities. Elementor Pro **4.3.2**
+was unavailable in the lab and its runtime features were not tested. Browser
+editor, screenshot and production integration checks are outside this run.
 
 ## Contact
 
